@@ -16,22 +16,22 @@ namespace DotNetSamples.WCF
 	{
 		#region IService Members
 
-		public List<District> GetAllDistricts()
-		{
-			using ( var _uow = new UnitOfWork() )
-			{
-				return _uow.DistrictRepository.Get().ToList();
-			}
-		}
+		//public List<District> GetAllDistricts()
+		//{
+		//	using ( var _uow = new UnitOfWork() )
+		//	{
+		//		return _uow.DistrictRepository.Get().ToList();
+		//	}
+		//}
 
-		public List<City> GetCitiesByDistrictId(int districtId)
-		{
-			using ( var _uow = new UnitOfWork() )
-			{
-				return _uow.CityRepository.GetWithRawSql( "select * from Cities C where C.DistrictID = @districtId",
-															new SqlParameter("@districtId", districtId )  ).ToList();
-			}
-		}
+		//public List<City> GetCitiesByDistrictId(int districtId)
+		//{
+		//	using ( var _uow = new UnitOfWork() )
+		//	{
+		//		return _uow.CityRepository.GetWithRawSql( "select * from Cities C where C.DistrictID = @districtId",
+		//													new SqlParameter("@districtId", districtId )  ).ToList();
+		//	}
+		//}
 
 		#endregion
 	}

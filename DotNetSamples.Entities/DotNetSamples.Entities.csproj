@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="City.cs" />
-    <Compile Include="District.cs" />
     <Compile Include="Quotes.cs" />
   </ItemGroup>
   <ItemGroup>

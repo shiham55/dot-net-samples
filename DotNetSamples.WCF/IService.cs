@@ -12,11 +12,11 @@ namespace DotNetSamples.WCF
 	[ServiceContract]
 	public interface IService 
 	{
-		[OperationContract]
-		List<District> GetAllDistricts();
+		//[OperationContract]
+		//List<District> GetAllDistricts();
 
-		[OperationContract]
-		List<City> GetCitiesByDistrictId( int districtId );
+		//[OperationContract]
+		//List<City> GetCitiesByDistrictId( int districtId );
 
 		//[OperationContract]
 		//CompositeType GetDataUsingDataContract(CompositeType composite);
