@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/common/UI/ShopMaster/Site.Master" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="DotNetSamples.WebForms.common.UI.ShopMaster.SiteMaster" %>
+<asp:Content ID="AdminContent" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/scripts/adminJs") %>
+    </asp:PlaceHolder>
+    
+    <webopt:bundlereference runat="server" path="~/styles/adminCss" />
+
+    <script>
+        $(document).ready(function()
+        {
+            tinymce.init({ selector: 'textarea' });
+        });
+    </script>
+    
+    <div style="overflow: auto">
+        <div style="display:inline-block; width: 10%; vertical-align: top">
+            <ul class="list-unstyled">
+                <li>
+                    <p class="page-header">Admin panel</p>
+                </li>
+                <li>
+                    <asp:linkbutton runat="server" postbackurl="~/Admin/BlogPosts/">Blogs</asp:linkbutton>
+                </li>
+                <li>
+                    <asp:linkbutton runat="server" postbackurl="~/Admin/Tags/">Tags</asp:linkbutton>   
+                </li>
+            </ul>
+        </div>
+        <div style="display:inline-block; width: 1%"></div>
+        <div style="display:inline-block; width: 88%; vertical-align: top ">
+            <asp:contentplaceholder runat="server" id="cphAdminContent" ></asp:contentplaceholder>
+        </div>
+    </div>
+</asp:Content>

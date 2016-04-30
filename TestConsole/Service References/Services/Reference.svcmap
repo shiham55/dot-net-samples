@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14b26dc9-2d5d-4be2-82c3-33a23b3eedf1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/WcfService/services.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Services.xsd" MetadataType="Schema" ID="75c47b1e-3e1d-41da-a902-f21a16026676" SourceId="1" SourceUrl="http://sl1-l0012.volume.co.uk/WcfService/Services.svc?xsd=xsd2" />
+    <MetadataFile FileName="Services1.xsd" MetadataType="Schema" ID="e8687bb4-a8d2-42cb-97df-e7a323ffc960" SourceId="1" SourceUrl="http://sl1-l0012.volume.co.uk/WcfService/Services.svc?xsd=xsd1" />
+    <MetadataFile FileName="Services2.xsd" MetadataType="Schema" ID="73fc8991-1869-41e2-a6fb-2d6a925095cd" SourceId="1" SourceUrl="http://sl1-l0012.volume.co.uk/WcfService/Services.svc?xsd=xsd0" />
+    <MetadataFile FileName="Services.wsdl" MetadataType="Wsdl" ID="31c06767-3fe9-47ed-8a20-ae8ca6ca25f2" SourceId="1" SourceUrl="http://sl1-l0012.volume.co.uk/WcfService/Services.svc?wsdl" />
+    <MetadataFile FileName="Services.disco" MetadataType="Disco" ID="08dd1c77-77bf-4070-9adf-71e5d9760e31" SourceId="1" SourceUrl="http://sl1-l0012.volume.co.uk/WcfService/Services.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,1 @@
+﻿<%@ servicehost service="DotNetSamples.WCF.Services" %>
