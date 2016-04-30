@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetSamples.Data", "DotNetSamples.Data\DotNetSamples.Data.csproj", "{BA85A1F5-6120-4593-81EF-BF69B02657B3}"
 EndProject
@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{DE99EBE8-CE7B-4359-A6BC-F6E977CCB02E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{5C0009B8-B0CC-40F8-AD16-34FFF7C444BD}"
+	ProjectSection(SolutionItems) = preProject
+		test.txt = test.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetSamples.WebForms", "DotNetSamples.WebForms\DotNetSamples.WebForms.csproj", "{E3961D5F-2053-476B-A5D5-1C430C5C011A}"
 	ProjectSection(ProjectDependencies) = postProject
