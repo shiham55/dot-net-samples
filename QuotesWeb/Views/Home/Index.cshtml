@@ -1,0 +1,23 @@
+﻿@using DotNetSamples.Entities;
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>Quotes</h1>
+    <p class="lead">Entity framework - Unit of Worrk and Repository Pattern </p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            @foreach (Quotes quote in ViewBag.Quotes)
+            {
+                <li>
+                    @quote.Text - <b>@quote.Author</b>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

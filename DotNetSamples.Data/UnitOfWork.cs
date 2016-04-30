@@ -15,40 +15,28 @@ namespace DotNetSamples.Data
     {
 		private DotNetSamplesEntities	_dbContext = new DotNetSamplesEntities();
 
-		private CityRepository			_cityRepository;
-		private DistrictRepository		_districtRepository;
-		
-		#region Properties
-	
-		public CityRepository CityRepository
-		{
-			get
-			{
-				if (_cityRepository == null )
-				{
-					_cityRepository		= new CityRepository(_dbContext);
-				}
-				return _cityRepository;
-			}			
-		}
+        private QuotesRepository        _quotesRepository;
 
-		public DistrictRepository  DistrictRepository
-		{
-			get
-			{
-				if (_districtRepository == null )
-				{
-					_districtRepository		= new DistrictRepository(_dbContext);
-				}
-				return _districtRepository;
-			}			
-		}
+        #region Properties
+
+        public QuotesRepository QuotesRepository
+        {
+            get
+            {
+                if (_quotesRepository == null)
+                {
+                    _quotesRepository = new QuotesRepository(_dbContext);
+                }
+                return _quotesRepository;
+            }
+        }
 
 		#endregion
 
 		#region Generic Methods
 		public void Save()
         {
+            //<TODO> : Handle validation errors and exceptions
 			if ( _dbContext.GetValidationErrors().Count()  == 0 )
 			{
 				_dbContext.SaveChanges();

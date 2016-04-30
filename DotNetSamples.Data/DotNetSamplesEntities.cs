@@ -6,7 +6,7 @@ using DotNetSamples.Entities;
 public partial class DotNetSamplesEntities : DbContext
 {	
     public DotNetSamplesEntities()
-        : base("name=ShopDatabaseEntities")
+        : base("name=DotNetSamplesEntities")
     {
         this.Configuration.LazyLoadingEnabled = false;
     }
@@ -15,7 +15,7 @@ public partial class DotNetSamplesEntities : DbContext
 	{
 		//throw new UnintentionalCodeFirstException();
 	}
-    public virtual DbSet<City> Cities { get; set; }
-    public virtual DbSet<District> Districts { get; set; }
+
+    public virtual DbSet<Quotes> Quotes { get; set; }
 }
 

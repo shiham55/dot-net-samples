@@ -71,9 +71,8 @@
     <Compile Include="Helpers\StateHelper.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Respository\CityRepository.cs" />
-    <Compile Include="Respository\DistrictRepository.cs" />
     <Compile Include="DotNetSamplesEntities.cs" />
+    <Compile Include="Respository\QuotesRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
